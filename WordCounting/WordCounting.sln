@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCounting", "WordCounting\WordCounting.csproj", "{1C8A8DF3-3EE7-4730-9DD1-0520E2A887CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C8A8DF3-3EE7-4730-9DD1-0520E2A887CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8A8DF3-3EE7-4730-9DD1-0520E2A887CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8A8DF3-3EE7-4730-9DD1-0520E2A887CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8A8DF3-3EE7-4730-9DD1-0520E2A887CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4ABA7BAF-BAF0-43B3-96A6-CD4D418EFEF4}
+	EndGlobalSection
+EndGlobal
