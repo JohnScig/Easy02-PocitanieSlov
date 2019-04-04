@@ -20,7 +20,7 @@ namespace WordCounting
         private void btn_CountWords_Click(object sender, EventArgs e)
         {
             Dictionary<string, int> CountedWords = new Dictionary<string, int>();
-            CountedWords = WordCount.CountWords(tBox_TextToCount.Text);
+            CountedWords = WordCount.CountWords(rtBox_TextToCount.Text);
             dataGridView_SortCount.Rows.Clear();
 
             foreach (string word in CountedWords.Keys)

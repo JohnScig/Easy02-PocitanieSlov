@@ -28,22 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tBox_TextToCount = new System.Windows.Forms.TextBox();
             this.dataGridView_SortCount = new System.Windows.Forms.DataGridView();
-            this.btn_CountWords = new System.Windows.Forms.Button();
-            this.btn_Reset = new System.Windows.Forms.Button();
             this.Column_Word = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_CountWords = new System.Windows.Forms.Button();
+            this.btn_Reset = new System.Windows.Forms.Button();
+            this.rtBox_TextToCount = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SortCount)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tBox_TextToCount
-            // 
-            this.tBox_TextToCount.Location = new System.Drawing.Point(12, 12);
-            this.tBox_TextToCount.Multiline = true;
-            this.tBox_TextToCount.Name = "tBox_TextToCount";
-            this.tBox_TextToCount.Size = new System.Drawing.Size(314, 426);
-            this.tBox_TextToCount.TabIndex = 0;
             // 
             // dataGridView_SortCount
             // 
@@ -61,6 +53,19 @@
             this.dataGridView_SortCount.RowHeadersVisible = false;
             this.dataGridView_SortCount.Size = new System.Drawing.Size(358, 426);
             this.dataGridView_SortCount.TabIndex = 1;
+            // 
+            // Column_Word
+            // 
+            this.Column_Word.HeaderText = "Word";
+            this.Column_Word.Name = "Column_Word";
+            this.Column_Word.ReadOnly = true;
+            // 
+            // Column_Count
+            // 
+            this.Column_Count.FillWeight = 35F;
+            this.Column_Count.HeaderText = "Count";
+            this.Column_Count.Name = "Column_Count";
+            this.Column_Count.ReadOnly = true;
             // 
             // btn_CountWords
             // 
@@ -82,44 +87,37 @@
             this.btn_Reset.UseVisualStyleBackColor = true;
             this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
-            // Column_Word
+            // rtBox_TextToCount
             // 
-            this.Column_Word.HeaderText = "Word";
-            this.Column_Word.Name = "Column_Word";
-            this.Column_Word.ReadOnly = true;
-            // 
-            // Column_Count
-            // 
-            this.Column_Count.FillWeight = 35F;
-            this.Column_Count.HeaderText = "Count";
-            this.Column_Count.Name = "Column_Count";
-            this.Column_Count.ReadOnly = true;
+            this.rtBox_TextToCount.Location = new System.Drawing.Point(12, 12);
+            this.rtBox_TextToCount.Name = "rtBox_TextToCount";
+            this.rtBox_TextToCount.Size = new System.Drawing.Size(314, 426);
+            this.rtBox_TextToCount.TabIndex = 4;
+            this.rtBox_TextToCount.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rtBox_TextToCount);
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_CountWords);
             this.Controls.Add(this.dataGridView_SortCount);
-            this.Controls.Add(this.tBox_TextToCount);
             this.Name = "Form1";
             this.Text = "Main Window";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SortCount)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tBox_TextToCount;
         private System.Windows.Forms.DataGridView dataGridView_SortCount;
         private System.Windows.Forms.Button btn_CountWords;
         private System.Windows.Forms.Button btn_Reset;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Word;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Count;
+        private System.Windows.Forms.RichTextBox rtBox_TextToCount;
     }
 }
 
